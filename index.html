@@ -12,40 +12,43 @@
         <style>
             html {
                 background-color: #380d4d;
-                color: #19d4ec;
+                color: #53fdf5;
             }
-            p {
-                font-size: 24pt;
-                font-family: 'Times New Roman', monospace;
-                text-align: center;
+
+            .basicText {
+                font-family: 'Courier New', Courier, monospace;
             }
-            img {
-              width: 50vw;
-            }
-            a {
+
+            .pageLinks {
                 text-decoration: dashed underline;
                 color: #0f0;
-                font-size: 800pt;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 12pt;
+                font-family: 'Times New Roman', Times, serif;
             }
-            #head {
+
+            .basicH1 {
                 text-align: center;
-                font-weight: 300;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 500;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #welcome {
+                font-weight: bold;
             }
         </style>
     </head>
     <body>
-        <h1 id="head">
+        <h1 class="basicH1" id="welcome">
             Welcome to Bung.Monster
         </h1>
-        <p style="position: relative; bottom: 2em">
+
+        <p class="basicH1" style="position: relative; bottom: 1.5em">
             The best site on the Inter-Net :3
         </p>
-        <img src="my_cool_image.png"/>
+
         <br>
-        <br>
-        <a href="smiley.html">
+
+        <a class="pageLinks" href="smiley.html">
             Hell :3
         </a>
     </body>
