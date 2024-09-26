@@ -19,7 +19,7 @@
                 font-family: 'Courier New', Courier, monospace;
                 font-size: 10pt;
                 position: relative;
-                bottom: .5em;
+                bottom: auto;
             }
 
             .pageLinks {
@@ -28,22 +28,29 @@
                 font-size: 11pt;
                 font-family: 'Times New Roman', Times, serif;
                 position: relative;
-                bottom: .5em;
+                bottom: auto;
             }
 
             .basicH1 {
                 text-align: center;
+                color: #1a8fdd;
                 font-weight: 500;
                 font-family: 'Courier New', Courier, monospace;
             }
 
-            #welcome {
-                font-weight: bold;
+
+            .pageBreak {
+                background-color:#3535c9;
+                height: 1px;
+                position: relative;
+                bottom: auto;
+                border: none;
             }
+
         </style>
     </head>
     <body>
-        <h1 class="basicH1" id="welcome">
+        <h1 class="basicH1" style="font-weight: bold;">
             Welcome to Bung.Monster
         </h1>
 
@@ -59,6 +66,8 @@
             to put here.
         </p>
 
+        <hr class="pageBreak">
+
         <h3 class="basicH1">
             Coming Soon
         </h3>
@@ -68,14 +77,32 @@
             calculate Mersenne primes for the rest of its pitiful existence.
         </p>
 
-        <a class="pageLinks" href="blender.html">
-            The Blender :3
+        <a class="pageLinks" href="gribbler.html"> 
+            The Gribbler (Work In Progress)
         </a>
 
-        <br>
+        <hr class="pageBreak">
 
-        <a class="pageLinks" href=""> 
-            The Gribbler (Live Cam)
+        <h3 class="basicH1">
+            The Shit Hosted
+        </h3>
+
+        <p class="basicText">
+            This is mostly stuff written by myself with help from the mysterious entity at
+            <a class="pageLinks" style="font-size: 10pt;" href="https://theawesomeinter.net">
+                https://theawesomeinter.net
+            </a>
+            . 
+            Check "Coming Soon" for updates on new projects/activities.
+        </p>
++
+        <!-- TODO: Make a new class for captions. Maybe a different font and spacing? -->
+        <p class="basicText" style="bottom: -.8em;">
+            The blender :3, not much more to be said here...
+        </p>
+
+        <a class="pageLinks" href="blender.html" style="bottom: auto;">
+            The Blender :3
         </a>
     </body>
 </html>
