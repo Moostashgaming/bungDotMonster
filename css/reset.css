@@ -1,0 +1,12 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212, shortened */
+html, body, div, span, h1, h2, h3, h4, h5,
+h6, p, a, img, strike, strong, b, u, i {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: center;
+	background: transparent
+}

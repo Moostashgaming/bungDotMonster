@@ -1,8 +1,36 @@
+
+h3 {
+    font-weight: 500;
+    font-size: 120%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 200%;
+}
+
+a {
+    margin: .5em;
+}
+
+
 .basicText {
     font-family: 'Courier New', Courier, monospace;
     font-size: 10pt;
     position: relative;
-    bottom: auto;
+    line-height: 1.3em;
+    margin: .5em;
+    color: #67e2f8;
+}
+
+.basicTextH {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10pt;
+    position: relative;
+    line-height: 1.3em;
+    margin: .1em;
+    text-align: center;
+    color: #11cfb6;
 }
 
 .pageLinks {
@@ -11,16 +39,13 @@
     font-size: 11pt;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
-    bottom: auto;
 }
 
 .basicH1 {
     text-align: center;
     color: #1a8fdd;
-    font-weight: 500;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
-    bottom: auto;
 }
 
 
@@ -28,8 +53,9 @@
     background-color:#3535c9;
     height: 1px;
     position: relative;
-    bottom: auto;
     border: none;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .caption {
@@ -38,6 +64,27 @@
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     position: relative;
-    bottom: -.8em;
+    margin: .5em;
+    margin-bottom: -.1em;    
+    margin-top: 2em;
     
+}
+
+.headerBar {
+    position: sticky;
+    background-color: #511470;
+
+    h3 {
+        margin-top: -.1em;
+        margin-bottom: .3em;
+        color: #11cfb6;
+    }
+
+    h1 {
+        margin-top: 0em;
+    }
+}
+
+.content {
+    position: relative;
 }
