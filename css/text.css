@@ -73,6 +73,9 @@ a {
 .headerBar {
     position: sticky;
     background-color: #511470;
+    z-index: 1000;
+    top: 0px;
+
 
     h3 {
         margin-top: -.1em;
