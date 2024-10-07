@@ -2,3 +2,7 @@ html {
     background-color: #380d4d;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
