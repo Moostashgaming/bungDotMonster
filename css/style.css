@@ -3,6 +3,25 @@ html {
 }
 
 img {
-    max-width: 100%;
+    display: block;
+    max-width: 50%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    
+}
+
+.content {
+    position: relative;
+}
+
+.img100W {
+    max-width: 100%;
+}
+
+.highlight {
+    background-color: #0c4b21;
 }
