@@ -17,7 +17,6 @@
         <style>
             html {
               background-color: #7aa034;
-              color: red;
             }
 
             #adamLambert {
@@ -26,6 +25,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 transition: transform 250s linear;
+                position: sticky;
             }
 
             #body1 {
@@ -36,12 +36,17 @@
                 transform: rotate(80000deg);
             }
 
-            body.loaded #adamLambert {
+            body.loaded #adamLambert, body.loaded .basicText {
                 transform: rotate(-80000deg);
             }
 
-            body.loaded .basicText {
-                transform: rotate(-80000deg);
+            .basicText {
+                transition: transform 300s linear;
+                color: red;
+            }
+
+            .pageLinks {
+                color: #2c2ab1;
             }
 
         </style>
@@ -59,7 +64,7 @@
         </script>
     </head>
     <body id="body1">
-        <p class="basicText" style="transition: transform 370s linear">
+        <p class="basicText">
             Welcome Home Welcome Home Welcome Home Welcome Home Welcome Home 
             Welcome Home Welcome Home Welcome Home Welcome Home Welcome Home
             Welcome Home Welcome Home Welcome Home Welcome Home Welcome Home
@@ -247,11 +252,11 @@
             Welcome Home Welcome Home Welcome Home Welcome Home Welcome Home
         </p>
 
-        <img id="adamLambert" src="/media/adamlambert.jpg" style="position: sticky;"/>
+        <img id="adamLambert" src="/media/adamlambert.jpg"/>
 
         <br>
         
-        <a class="pageLinks" href="/index.html" style="color: #2c2ab1;">
+        <a class="pageLinks" href="/index.html">
             GO BACK!!!!!!
         </a>
     </body>

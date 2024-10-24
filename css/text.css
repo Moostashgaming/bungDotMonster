@@ -8,6 +8,10 @@ h1 {
     font-size: 200%;
 }
 
+h4 {
+    font-weight: 500;
+}
+
 a {
     margin: .5em;
 }
@@ -21,7 +25,7 @@ ul {
     }
 }
 
-.basicText {
+.basicText, .content p:not(.caption) {
     font-family: monospace;
     font-size: 10pt;
     position: relative;
@@ -30,7 +34,7 @@ ul {
     color: #67e2f8;
 }
 
-.basicTextH {
+.basicTextH, h4 {
     font-family: monospace;
     font-size: 10pt;
     position: relative;
@@ -40,7 +44,9 @@ ul {
     color: #11cfb6;
 }
 
-.pageLinks {
+
+/* Basic Page Links */
+.pageLinks, .headerBar a, .content a {
     text-decoration: dashed underline;
     color: #0f0;
     font-size: 11pt;
@@ -49,14 +55,16 @@ ul {
     white-space: nowrap;
 }
 
-.basicH1 {
+/* Basic Headers */
+.basicH1, .headerBar h1, .headerBar h3, .content h1, .content h3 {
     text-align: center;
     color: #1a8fdd;
     font-family: monospace;
     position: relative;
 }
 
-.pageBreak {
+/* Basic Page Breaks (hr) */
+.pageBreak, .headerBar hr, .content hr {
     background-color:#3535c9;
     height: 1px;
     position: relative;
@@ -77,26 +85,15 @@ ul {
     
 }
 
-.captionTop {
-    font-size: 10pt;
-    color: #1a8fdd;
-    font-family: monospace;
-    font-style: italic;
-    position: relative;
-    margin: .5em;
-    margin-bottom: -.1em;    
+h4 + .caption {
     margin-top: 1em;
     
 }
 
-.imgCaption {
-    font-size: 10pt;
-    color: #1a8fdd;
-    font-family: monospace;
-    font-style: italic;
-    position: relative;
+img + .caption {
     text-align: center;
-    margin-bottom: .5em;
+    margin-bottom: .7em;
+    margin-top: .05em;
 }
 
 .headerBar {
