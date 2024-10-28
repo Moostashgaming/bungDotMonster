@@ -2,12 +2,30 @@ html {
     background-color: #380d4d;
 }
 
-img {
+img, video {
     display: block;
     max-width: 50%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+video {
+    border: 3px solid hsl(172, 85%, 44%);
+}
+
+.content video:first-child, .content img:first-child {
+    margin-top: .7em;
+}
+
+/* Basic Page Breaks (hr) */
+.pageBreak, .headerBar hr, .content hr {
+    background-color:#3535c9;
+    height: 1px;
+    position: relative;
+    border: none;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .content {

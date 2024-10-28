@@ -16,15 +16,6 @@ a {
     margin: .5em;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0em;
-    
-    li {
-        padding-left: 0em;
-    }
-}
-
 .basicText, .content p:not(.caption) {
     font-family: monospace;
     font-size: 10pt;
@@ -63,16 +54,6 @@ ul {
     position: relative;
 }
 
-/* Basic Page Breaks (hr) */
-.pageBreak, .headerBar hr, .content hr {
-    background-color:#3535c9;
-    height: 1px;
-    position: relative;
-    border: none;
-    margin-top: .5em;
-    margin-bottom: .5em;
-}
-
 .caption {
     font-size: 10pt;
     color: #1a8fdd;
@@ -90,10 +71,14 @@ h4 + .caption {
     
 }
 
-img + .caption {
+img + .caption, video + .caption {
     text-align: center;
     margin-bottom: .7em;
     margin-top: .05em;
+}
+
+video + .caption {
+    margin-top: .06em;
 }
 
 .headerBar {
