@@ -11,7 +11,7 @@ img, video {
 }
 
 video {
-    border: 3px solid hsl(172, 85%, 44%);
+    border: 3px solid #11d0b6;
     background-color: #511470;
 }
 
