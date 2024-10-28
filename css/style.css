@@ -12,6 +12,7 @@ img, video {
 
 video {
     border: 3px solid hsl(172, 85%, 44%);
+    background-color: #511470;
 }
 
 .content video:first-child, .content img:first-child {

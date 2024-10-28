@@ -12,20 +12,6 @@
     <title>
         bung.monster
     </title>
-
-    <script>
-        var video = document.querySelector("#webcam")
-
-        if (navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video: true })
-            .then (function (stream) {
-                video.srcObject = stream;
-            })
-            .catch(function (err0r) {
-                console.log("Could not get webcam");
-            });
-        }
-    </script>
 </head>
 
 <body>
@@ -52,4 +38,18 @@
             The gumbus in question (Will not work without JavaScript)
         </p>
     </div>
+
+    <script>
+        var video = document.querySelector("#webcam")
+
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+            .then (function (stream) {
+                video.srcObject = stream;
+            })
+            .catch(function (err0r) {
+                console.log("Could not get webcam");
+            });
+        }
+    </script>
 </body>
