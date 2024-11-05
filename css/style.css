@@ -15,18 +15,13 @@ video {
     background-color: #511470;
 }
 
-.content video:first-child, .content img:first-child {
-    margin-top: .7em;
-}
-
 /* Basic Page Breaks (hr) */
 .pageBreak, .headerBar hr, .content hr {
     background-color:#3535c9;
     height: 1px;
-    position: relative;
     border: none;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: .6vh;
+    margin-bottom: .7vh;
 }
 
 .content {
@@ -42,51 +37,49 @@ video {
 }
 
 .face {
-    width: 8em;
-    height: 8em;
-    line-height: 8em;
-    font-weight: bold;
-    text-align: center;
+    width: 15vw;
+    height: 15vw;
     border: 2px solid;
 }
   
 .cube {
   display: grid;
-
-  #front {
-    transform: translate3d(0, 0, 4em);
-    background-color: red;
-  }
-  
-  #back {
-    transform: translate3d(0, 0, -4em);
-    background-color: greenyellow;
-  }
-  
-  #left {
-    transform: translate3d(-4em, 0, 0) rotate3d(0, 1, 0, 270deg);
-    background-color: orange;
-  }
-  
-  #right {
-    transform: translate3d(4em, 0, 0) rotate3d(0, 1, 0, 90deg);
-    background-color: yellow;
-  }
-  
-  #top {
-    transform: translate3d(0, -4em, 0) rotate3d(1, 0, 0, 90deg);
-    background-color: magenta;
-  }
-  
-  #bottom {
-    transform: translate3d(0, 4em, 0) rotate3d(1, 0, 0, 90deg);
-    background-color: aqua;
-  }
+  transform-style: preserve-3d;
 }
 
 .cube > * {
   grid-column-start: 1;
   grid-row-start: 1;
+}
+
+.front {
+  transform: translate3d(0, 0, 7.5vw);
+  background-color: red;
+}
+
+.back {
+  transform: translate3d(0, 0, -7.5vw);
+  background-color: greenyellow;
+}
+
+.left {
+  transform: translate3d(-7.5vw, 0, 0) rotate3d(0, 1, 0, 270deg);
+  background-color: orange;
+}
+
+.right {
+  transform: translate3d(7.5vw, 0, 0) rotate3d(0, 1, 0, 90deg);
+  background-color: yellow;
+}
+
+.top {
+  transform: translate3d(0, -7.5vw, 0) rotate3d(1, 0, 0, 90deg);
+  background-color: magenta;
+}
+
+.bottom {
+  transform: translate3d(0, 7.5vw, 0) rotate3d(1, 0, 0, 90deg);
+  background-color: aqua;
 }
 
 @keyframes cube-rotate {
@@ -108,44 +101,3 @@ video {
     transform: rotate3d(0, 1, 0, 360deg);
   }
 }
-
-@keyframes change-z-index {
-  0% {
-    z-index: +1;
-  }
-
-  50% {
-    z-index: -1;
-  }
-  
-}
-
-#cube-container {
-    margin-top: 5em;
-}
-
-#cube-container > * {
-    position: relative;
-}
-
-#cube-container * {
-    transform-style: preserve-3d;
-}
-
-#center-cube {
-  grid-column: 2;
-  animation: cube-rotate linear 3s infinite;
-  position: fixed;
-  top: 50%;
-  left: 43%;
-  right: 43%;
-  transform-origin: 0, 0, 0;
-}
-
-#y-orbit-shell {
-    top: 10em;
-    transform-origin: 43%, 0, 0;
-    animation: y-axis-orbit 5s linear infinite, change-z-index 6s reverse infinite;
-}
-
-
