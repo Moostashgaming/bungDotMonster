@@ -2,78 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Very trippy animation of cubes orbiting each other.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Very trippy animation of cubes orbiting each other.">
 
-  <title>
-    bung.monster
-  </title>
-  
-  <link href="/css/reset.css" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
-  <link href="/css/text.css" rel="stylesheet">
+    <title>
+        bung.monster
+    </title>
 
-  <style>
-    #cube-container {
-      margin-top: 37vh;
-    }
-  
-    #center-cube {
-      grid-column: 2;
-      animation: cube-rotate linear 3s infinite;
-      position: fixed;
-      top: 50vh;
-      left: 45vw;
-    }
-  
-    #y-orbit-shell {
-      animation: y-axis-orbit 4s linear infinite;
-      transform-style: preserve-3d;
-    }
-    
-  </style>
-  
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/text.css" rel="stylesheet">
+
+    <style>
+        #cube-container {
+            margin-top: 37vh;
+        }
+
+        #center-cube {
+            grid-column: 2;
+            animation: cube-rotate linear 3s infinite;
+            position: fixed;
+            top: 50vh;
+            left: 45vw;
+        }
+
+        #y-orbit-shell {
+            animation: y-axis-orbit 4s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+    </style>
 </head>
 
 <body>
-  <div class="headerBar" id="header">
+<header id="header">
     <h1>
-      Trippy Orbit
+        Trippy Orbit
     </h1>
 
     <h3>
-      This one is pretty wild.
+        This one is pretty wild.
     </h3>
 
-    <a href="/projects/animations/home.html">
-      Go Back!
-    </a>
-    
+    <nav>
+        <a href="/projects/animations/home.html">
+            Go Back!
+        </a>
+    </nav>
+
     <hr>
-  </div>
+</header>
 
-  <div id="cube-container">
+<div id="cube-container">
     <div class="cube" id="center-cube">
-      <div class="face top"></div>
-      <div class="face bottom"></div>
-      <div class="face left"></div>
-      <div class="face right"></div>
-      <div class="face front"></div>
-      <div class="face back"></div>
-    </div>
-
-    <div id="y-orbit-shell">
-      <div class="cube" id="y-orbit-cube">
         <div class="face top"></div>
         <div class="face bottom"></div>
         <div class="face left"></div>
         <div class="face right"></div>
         <div class="face front"></div>
         <div class="face back"></div>
-      </div>
     </div>
-  </div>
+
+    <div id="y-orbit-shell">
+        <div class="cube" id="y-orbit-cube">
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face front"></div>
+            <div class="face back"></div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>

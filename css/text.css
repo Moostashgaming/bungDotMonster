@@ -16,7 +16,7 @@ a {
     margin: .6vh;
 }
 
-.basicText, .content p:not(.caption) {
+.basicText, article p:not(.caption) {
     font-family: monospace;
     font-size: 10pt;
     line-height: 1.3em;
@@ -35,7 +35,7 @@ a {
 
 
 /* Basic Page Links */
-.pageLinks, .headerBar a, .content a {
+.pageLinks, header a, header a, article a {
     text-decoration: dashed underline;
     color: #0f0;
     font-size: 11pt;
@@ -44,21 +44,19 @@ a {
 }
 
 /* Basic Headers */
-.basicH1, .headerBar h1, .headerBar h3, .content h1, .content h3 {
+.basicH1, header h1, header h3, article h1, article h3 {
     text-align: center;
     color: #1a8fdd;
     font-family: monospace;
 }
 
-.caption {
+.caption, figcaption {
     font-size: 10pt;
     color: #1a8fdd;
     font-family: monospace;
     font-style: italic;
-    margin: .6vh;
-    margin-bottom: -.1vh;    
-    margin-top: 2vh;
-    
+    margin: 2vh .6vh -.1vh;
+
 }
 
 h4 + .caption, hr + .caption {
@@ -66,17 +64,17 @@ h4 + .caption, hr + .caption {
     
 }
 
-img + .caption, video + .caption {
+img + figcaption, video + figcaption {
     text-align: center;
     margin-bottom: .7vh;
     margin-top: .05vh;
 }
 
-video + .caption {
+video + figcaption {
     margin-top: .06vh;
 }
 
-.headerBar {
+.headerBar, header:not(article header) {
     position: sticky;
     background-color: #511470;
     z-index: 1000;

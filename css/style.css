@@ -2,9 +2,9 @@ html {
     background-color: #380d4d;
 }
 
-img, video {
+video, figure, img {
     display: block;
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -13,10 +13,11 @@ img, video {
 video {
     border: 3px solid #11d0b6;
     background-color: #511470;
+    max-width: 97%;
 }
 
 /* Basic Page Breaks (hr) */
-.pageBreak, .headerBar hr, .content hr {
+hr {
     background-color:#3535c9;
     height: 1px;
     border: none;
@@ -24,16 +25,13 @@ video {
     margin-bottom: .7vh;
 }
 
-.content {
-    position: relative;
+.smallImg {
+    max-width: 50%;
 }
 
-.img100W {
-    max-width: 100%;
-}
-
-.highlight, span {
+.highlight, mark {
     background-color: #0c4b21;
+    color: inherit;
 }
 
 .face {

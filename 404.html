@@ -15,41 +15,45 @@
 </head>
 
 <body>
-    <div class="headerBar">
-        <h1>
-            Page Not Found
-        </h1>
+<header>
+    <h1>
+        Page Not Found
+    </h1>
 
-        <h3>
-            You Have Fallen Through the Crack
-        </h3>
+    <h3>
+        You Have Fallen Through the Crack
+    </h3>
 
+    <nav>
         <a href="index.html">Go Back!</a>
+    </nav>
 
-        <hr>
-    </div>
+    <hr>
+</header>
 
-    <div class="content">
-        <video autoplay="true" id="webcam" poster="/media/bung_monster.jpg">
+<div>
+    <figure>
+        <video autoplay muted id="webcam" poster="/media/bung_monster.jpg">
 
         </video>
 
-        <p class="caption">
+        <figcaption>
             The gumbus in question (Will not work without JavaScript)
-        </p>
-    </div>
+        </figcaption>
+    </figure>
+</div>
 
-    <script>
-        var video = document.querySelector("#webcam")
+<script>
+    var video = document.querySelector("#webcam")
 
-        if (navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video: true })
-            .then (function (stream) {
+    if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({video: true})
+            .then(function (stream) {
                 video.srcObject = stream;
             })
             .catch(function (err0r) {
                 console.log("Could not get webcam");
             });
-        }
-    </script>
+    }
+</script>
 </body>
