@@ -1,5 +1,8 @@
 html {
     background-color: #380d4d;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    hyphens: auto;
 }
 
 video, figure, img {
@@ -11,7 +14,7 @@ video, figure, img {
 }
 
 video {
-    border: 3px solid #11d0b6;
+    border: .3vh solid #11d0b6;
     background-color: #511470;
     max-width: 97%;
 }
@@ -23,6 +26,13 @@ hr {
     border: none;
     margin-top: .6vh;
     margin-bottom: .7vh;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    flex: initial;
 }
 
 .smallImg {
@@ -37,7 +47,7 @@ hr {
 .face {
     width: 15vw;
     height: 15vw;
-    border: 2px solid;
+    border: .2vh solid;
 }
   
 .cube {

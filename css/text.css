@@ -1,4 +1,4 @@
-h3 {
+h3, h2 {
     font-weight: 500;
     font-size: 120%;
 }
@@ -12,12 +12,13 @@ h4 {
     font-weight: 500;
 }
 
-a {
-    margin: .6vh;
+a:focus {
+    border: #00b6f8 solid 1px;
+    padding: .17vh;
 }
 
 .basicText, article p:not(.caption) {
-    font-family: monospace;
+    font-family: monospace, systemui;
     font-size: 10pt;
     line-height: 1.3em;
     margin: .6vh;
@@ -25,7 +26,7 @@ a {
 }
 
 .basicTextH, h4 {
-    font-family: monospace;
+    font-family: monospace, systemui;
     font-size: 10pt;
     line-height: 1.3em;
     margin: .1vh;
@@ -35,25 +36,38 @@ a {
 
 
 /* Basic Page Links */
-.pageLinks, header a, header a, article a {
+.pageLinks, header a, article a {
     text-decoration: dashed underline;
     color: #0f0;
     font-size: 11pt;
-    font-family: Times, serif;
-    white-space: nowrap;
+    font-family: Times, serif, systemui;
+    font-weight: 600;
+    margin: .6vh;
+}
+
+header a {
+    padding: .17vh;
+    border: solid .1vh #16beb2;
+    margin-bottom: .1vh;
 }
 
 /* Basic Headers */
-.basicH1, header h1, header h3, article h1, article h3 {
+.basicH1, header h1, header h2, article h1, article h3 {
     text-align: center;
     color: #1a8fdd;
-    font-family: monospace;
+    font-family: monospace, systemui;
+}
+
+header h2 {
+    margin-top: 0.3vh;
+    margin-bottom: .3vh;
+    color: #11cfb6;
 }
 
 .caption, figcaption {
     font-size: 10pt;
     color: #1a8fdd;
-    font-family: monospace;
+    font-family: monospace, systemui;
     font-style: italic;
     margin: 2vh .6vh -.1vh;
 
@@ -79,14 +93,4 @@ video + figcaption {
     background-color: #511470;
     z-index: 1000;
     top: 0;
-
-    h3 {
-        margin-top: 0.3vh;
-        margin-bottom: .3vh;
-        color: #11cfb6;
-    }
-
-    h1 {
-        color: #1a8fdd;
-    }
 }
