@@ -12,11 +12,6 @@ h4 {
     font-weight: 500;
 }
 
-a:focus {
-    border: #00b6f8 solid 1px;
-    padding: .17vh;
-}
-
 .basicText, article p:not(.caption) {
     font-family: monospace, systemui;
     font-size: 10pt;

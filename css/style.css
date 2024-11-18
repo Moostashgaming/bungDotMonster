@@ -35,6 +35,16 @@ nav {
     flex: initial;
 }
 
+a:focus:not(header a) {
+    border: #00b6f8 solid 1px;
+    padding: .17vh;
+}
+
+header a:focus {
+    border: #00ff00 solid 1px;
+    color: #00b6f8;
+}
+
 .smallImg {
     max-width: 50%;
 }

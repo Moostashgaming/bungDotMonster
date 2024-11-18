@@ -16,6 +16,7 @@
     <style>
         html {
             background-color: #7aa034;
+            animation: flash 1s infinite linear;
         }
 
         #adamLambert {
@@ -23,45 +24,42 @@
             width: 85vw;
             margin-left: auto;
             margin-right: auto;
-            transition: transform 250s linear;
+            animation: rotate 250s linear infinite reverse;
             position: sticky;
         }
 
         #body1 {
-            transition: transform 450s linear;
-        }
-
-        body.loaded {
-            transform: rotate(80000deg);
-        }
-
-        body.loaded #adamLambert, body.loaded .basicText {
-            transform: rotate(-80000deg);
+            animation: rotate 450s linear infinite reverse;
         }
 
         .basicText {
-            transition: transform 300s linear;
             color: red;
+            animation: rotate 300s linear infinite;
         }
 
         .pageLinks {
             color: #2c2ab1;
         }
 
-    </style>
-    <script>
-        window.setInterval(() => {
-            document.documentElement.style.backgroundColor = "#7aa034"
-            setTimeout(() => {
-                document.documentElement.style.backgroundColor = "#fff"
-            }, 100)
-        }, 200)
-
-        window.onload = function () {
-            document.body.className += " loaded";
+        @keyframes rotate {
+            0% {
+                transform: rotate(80000deg);
+            }
         }
-    </script>
+
+        @keyframes flash {
+            from {
+                background-color: #ffffff;
+            }
+
+            to {
+                background-color: #7aa034;
+            }
+        }
+
+    </style>
 </head>
+
 <body id="body1">
 <p class="basicText">
     Welcome Home Welcome Home Welcome Home Welcome Home Welcome Home
