@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<header>
+<header role="banner">
     <h1>
         Page Not Found
     </h1>
@@ -25,14 +25,14 @@
         You Have Fallen Through the Crack
     </h2>
 
-    <nav>
+    <nav role="navigation">
         <a href="index.html">Go Back!</a>
     </nav>
 
     <hr>
 </header>
 
-<div>
+<main role="main">
     <figure>
         <video autoplay muted id="webcam" poster="/media/bung_monster.jpg">
 
@@ -42,7 +42,7 @@
             The gumbus in question (Will not work without JavaScript)
         </figcaption>
     </figure>
-</div>
+</main>
 
 <script>
     const video = document.querySelector("#webcam")

@@ -24,7 +24,7 @@
 
 <body>
 <!-- The title bar -->
-<header>
+<header role="banner">
     <h1>
         Welcome to Bung.Monster!
     </h1>
@@ -33,7 +33,7 @@
         The best site on the Inter-Net :3
     </h2>
 
-    <nav>
+    <nav role="navigation">
         <a href="#">
             Top of Page
         </a>
@@ -66,96 +66,8 @@
     <hr>
 </header>
 
-<article>
-    <header hidden>
-        <h3>
-            Foreward
-        </h3>
-    </header>
-
-    <p>
-        This is a site where I host really whatever I want.
-        Be it my To-Do list or a live view of the office of
-        Satya Nadella, this site is whatever I want it to be
-        and is a sort of hobby base for any projects I desire
-        to put here.
-    </p>
-
-    <hr>
-</article>
-
-<article>
-    <header>
-        <h3>
-            Coming Soon
-        </h3>
-    </header>
-
-    <p>
-        The Gribber will soon get its own live cam, where you can watch it
-        calculate Mersenne primes for the rest of its pitiful existence.
-    </p>
-
-    <a href="/projects/gribbler.html">
-        The Gribbler (Work In Progress)
-    </a>
-
-    <hr>
-
-</article>
-
-
-<article>
-    <header>
-        <h3>
-            The Shit Hosted
-        </h3>
-    </header>
-
-    <p>
-        This is mostly stuff written by myself with help from the mysterious entity at
-        <a href="https://theawesomeinter.net" id="awesomeLink" target="_blank">
-            https://theawesomeinter.net
-        </a>
-        .
-        Check "Coming Soon" for updates on new projects/activities.
-    </p>
-
-    <p class="caption">
-        The blender :3, not much more to be said here... (Epilepsy Warning)
-    </p>
-
-    <a href="/projects/blender.html">
-        The Blender :3
-    </a>
-
-    <p class="caption">
-        Stories and things that I've written that are just absolutely insane.
-
-    </p>
-    <a href="/projects/writing.html">
-        Zone of Conspiracy
-    </a>
-
-    <p class="caption">
-        Cool pure CSS animations I've made.
-    </p>
-
-    <a href="/projects/animations/home.html">
-        Animation Land
-    </a>
-
-    <hr>
-</article>
-
-<article>
-    <header>
-        <h3>
-            About Me
-        </h3>
-    </header>
-
-    <section>
+<main role="main">
+    <article>
         <header hidden>
             <h3>
                 Foreward
@@ -163,72 +75,162 @@
         </header>
 
         <p>
-            I am a computer programmer who mainly works in C and Java.
-            I'm alright, but I'm definitly still learning.
+            This is a site where I host really whatever I want.
+            Be it my To-Do list or a live view of the office of
+            Satya Nadella, this site is whatever I want it to be
+            and is a sort of hobby base for any projects I desire
+            to put here.
         </p>
 
-        <br>
-    </section>
+        <hr>
+    </article>
 
-    <section>
-
+    <article>
         <header>
             <h3>
-                My Hobbies
+                Coming Soon
             </h3>
-
-            <h4>
-                I highlighted my favorite. So yeah.
-            </h4>
         </header>
 
         <p>
-            <mark>Programming</mark>
-            - As mentioned I write in mostly C and Java.
-            C I use for personal projects and Java I use for FIRST robotics and Minecraft mods.
+            The Gribber will soon get its own live cam, where you can watch it
+            calculate Mersenne primes for the rest of its pitiful existence.
         </p>
 
-        <br>
+        <a href="/projects/gribbler.html">
+            The Gribbler (Work In Progress)
+        </a>
 
-        <p>
-            Progaming :3 - I mostly play Minecraft right now, but one of my all-time favorite games is the Horizon
-            series.
-            Other great games include Rain World, Super Mario Bros (1985), and The Stanley Parable. (To name a few)
-        </p>
+        <hr>
 
-        <br>
+    </article>
 
-        <p>
-            Music - I play the Alto Saxophone in marching and concert band. I also have a Soprano Saxophone I play
-            on my own time.
-            I also sing in a choir.
-        </p>
 
-        <br>
-    </section>
-
-    <section>
+    <article>
         <header>
             <h3>
-                My Favorite Websites
+                The Shit Hosted
             </h3>
-
-            <h4>
-                Favorite websites that I've collected/found.
-            </h4>
         </header>
+
+        <p>
+            This is mostly stuff written by myself with help from the mysterious entity at
+            <a href="https://theawesomeinter.net" id="awesomeLink" target="_blank">
+                https://theawesomeinter.net
+            </a>
+            .
+            Check "Coming Soon" for updates on new projects/activities.
+        </p>
 
         <p class="caption">
-            A website :3
+            The blender :3, not much more to be said here... (Epilepsy Warning)
         </p>
 
-        <a href="https://theawesomeinter.net" target="_blank">
-            https://theawesomeinter.net
+        <a href="/projects/blender.html">
+            The Blender :3
         </a>
-    </section>
 
-    <hr>
-</article>
+        <p class="caption">
+            Stories and things that I've written that are just absolutely insane.
+
+        </p>
+        <a href="/projects/writing.html">
+            Zone of Conspiracy
+        </a>
+
+        <p class="caption">
+            Cool pure CSS animations I've made.
+        </p>
+
+        <a href="/projects/animations/home.html">
+            Animation Land
+        </a>
+
+        <hr>
+    </article>
+
+    <article>
+        <header>
+            <h3>
+                About Me
+            </h3>
+        </header>
+
+        <section>
+            <header hidden>
+                <h3>
+                    Foreward
+                </h3>
+            </header>
+
+            <p>
+                I am a computer programmer who mainly works in C and Java.
+                I'm alright, but I'm definitly still learning.
+            </p>
+
+            <br>
+        </section>
+
+        <section>
+
+            <header>
+                <h3>
+                    My Hobbies
+                </h3>
+
+                <h4>
+                    I highlighted my favorite. So yeah.
+                </h4>
+            </header>
+
+            <p>
+                <mark>Programming</mark>
+                - As mentioned I write in mostly C and Java.
+                C I use for personal projects and Java I use for FIRST robotics and Minecraft mods.
+            </p>
+
+            <br>
+
+            <p>
+                Progaming :3 - I mostly play Minecraft right now, but one of my all-time favorite games is the Horizon
+                series.
+                Other great games include Rain World, Super Mario Bros (1985), and The Stanley Parable. (To name a few)
+            </p>
+
+            <br>
+
+            <p>
+                Music - I play the Alto Saxophone in marching and concert band. I also have a Soprano Saxophone I play
+                on my own time.
+                I also sing in a choir.
+            </p>
+
+            <br>
+        </section>
+
+        <section>
+            <header>
+                <h3>
+                    My Favorite Websites
+                </h3>
+
+                <h4>
+                    Favorite websites that I've collected/found.
+                </h4>
+            </header>
+
+            <p class="caption">
+                A website :3
+            </p>
+
+            <a href="https://theawesomeinter.net" target="_blank">
+                https://theawesomeinter.net
+            </a>
+        </section>
+
+        <hr>
+    </article>
+</main>
 </body>
 
 </html>

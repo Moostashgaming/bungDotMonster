@@ -16,7 +16,7 @@ h4 {
     font-family: monospace, systemui;
     font-size: 10pt;
     line-height: 1.3em;
-    margin: .6vh;
+    margin: 6px;
     color: #67e2f8;
 }
 
@@ -24,7 +24,7 @@ h4 {
     font-family: monospace, systemui;
     font-size: 10pt;
     line-height: 1.3em;
-    margin: .1vh;
+    margin: 1px;
     text-align: center;
     color: #11cfb6;
 }
@@ -37,12 +37,12 @@ h4 {
     font-size: 11pt;
     font-family: Times, serif, systemui;
     font-weight: 600;
-    margin: .6vh;
+    margin: 6px;
 }
 
 header a {
-    padding: .17vh;
-    border: solid .1vh #16beb2;
+    padding: 2px;
+    border: solid 1px #16beb2;
     margin-bottom: .1vh;
 }
 
@@ -54,7 +54,7 @@ header a {
 }
 
 header h2 {
-    margin-top: 0.3vh;
+    margin-top: .3vh;
     margin-bottom: .3vh;
     color: #11cfb6;
 }
@@ -64,7 +64,7 @@ header h2 {
     color: #1a8fdd;
     font-family: monospace, systemui;
     font-style: italic;
-    margin: 2vh .6vh -.1vh;
+    margin: 2vh 6px -.1vh;
 
 }
 

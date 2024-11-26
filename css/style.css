@@ -14,7 +14,7 @@ video, figure, img {
 }
 
 video {
-    border: .3vh solid #11d0b6;
+    border: 3px solid #11d0b6;
     background-color: #511470;
     max-width: 97%;
 }
@@ -37,7 +37,7 @@ nav {
 
 a:focus:not(header a) {
     border: #00b6f8 solid 1px;
-    padding: .17vh;
+    padding: 1px;
 }
 
 header a:focus {
@@ -57,7 +57,7 @@ header a:focus {
 .face {
     width: 15vw;
     height: 15vw;
-    border: .2vh solid;
+    border: 2px solid;
 }
   
 .cube {
