@@ -1,8 +1,8 @@
 html {
     background-color: #380d4d;
-    overflow-wrap: break-word;
     overflow-x: hidden;
     hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 video, figure, img {
